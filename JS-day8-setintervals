@@ -1,0 +1,87 @@
+function hello(){
+  console.log('hello my friend');
+ 
+}
+hello();
+const hi = setTimeout(hello, 2000);
+//run the function hello after 5 seconds has elapsed
+
+console.log(hi); // appears at the end of console
+
+function greet(name, byeText){
+    console.log('good Morning, ', name, byeText);
+// name = doesnt hold a value
+// byeText = doesnt hold a value
+
+}
+greet('tim', 'See ya'); // OUTPUT = 'GM' 'TIM', 'SEE YA'
+
+let timeOutID = setTimeout(greet, 5000, 'Mick', 'Good Evening'); // waits 5 seconds GM, TIM
+console.log(timeOutID);
+
+clearTimeout(timeOutID);
+
+//clearTimeout
+clearTimeout(hi);
+
+//// SCENARIO - you have a website where there are some articles/posts.
+
+  // You are thinking to ask the user to SIGN-UP after 20 seconds.
+
+  // However, if the user has already clicked on the subscribe button WITHIN 20 seconds,
+
+  // then there is NO point in running the logic (asking them to subscribe).
+
+ 
+
+  // TASK - BUILD THE FOLLOWING INSIDE A FUNCTION:
+
+  // if (time>20 seconds) and the user has not subscribed (html?)
+
+  // setTimeOut (20000) //20 seconds
+
+  // else the user has already subscribed
+
+  // clearTimeOut
+
+//let signUp = alert("please sign up within 20sec to stay on the page");
+//console.log(signUp);
+
+// set interval 
+//stinterval() - allows us to run the function REPEATEDLY after the inveral of time. - clock, stopwatch etc
+
+function talk(name, byeText){
+    console.log('Good Morning ', name, byeText); //GM GN T
+}
+let intervalID = setInterval(talk, 5000, 'Tim', 'Goodnight');
+//function., time in ms, parameter1, parameter2, etc.)
+clearInterval(intervalID);
+
+//DATE and TIME
+
+const d = new Date(); // date(miliseconds)
+console.log(d);
+
+//default = browser's time zone and displayed as full text string
+//example output : ---> Fri Apr 01 2022
+
+const d2 = d.getTime(); // output will be in miliseconds
+
+console.log(d2.toString());
+
+const d3 = d.getFullYear();
+console.log(d3.toString());
+
+const history = new Date(45,6,11) // 11 ist the december becuase of index
+console.log(history);
+
+const d4 = new Date(1800, 7, 09); // 
+console.log(d4);
+
+// API KEY for NEW API - (NEWSAPIKEY) (https://rapidapi.com/collection/list-of-free-apis)
+
+
+
+
+
+
